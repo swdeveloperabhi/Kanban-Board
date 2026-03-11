@@ -9,45 +9,45 @@ The application is **deployed on Vercel** for fast and reliable hosting.
 
 ## 🚀 Live Demo
 
-🔗 **Live App:** https://your-kanban-app.vercel.app
+🔗 **Live App:** https://kanbanboard-w2rz.onrender.com/
 
 ---
 
 ## 📸 Screenshot
 
-![Kanban Board Screenshot](./screenshot.png)
+<img width="1894" height="905" alt="image" src="https://github.com/user-attachments/assets/f796789f-30e4-4fae-b452-a1407c0b1a76" />
+<img width="1894" height="905" alt="image" src="https://github.com/user-attachments/assets/f796789f-30e4-4fae-b452-a1407c0b1a76" />
 
-> Replace the above image with a screenshot of your deployed app.
 
 ---
 
 ## ✨ Features
 
-* 📌 **Kanban Board Layout**
+* **Kanban Board Layout**
 
   * Organize tasks into columns like **To Do, In Progress, and Done**
 
-* 🔄 **Drag and Drop Tasks**
+* **Drag and Drop Tasks**
 
   * Move tasks between columns easily
 
-* ➕ **Add New Tasks**
+* **Add New Tasks**
 
   * Quickly create tasks inside any column
 
-* ✏️ **Edit Tasks**
+* **Edit Tasks**
 
   * Update task titles or details
 
-* ❌ **Delete Tasks**
+* **Delete Tasks**
 
   * Remove tasks when completed or no longer needed
 
-* 💾 **Persistent State**
+* **Persistent State**
 
   * Tasks remain saved (via local storage if implemented)
 
-* 📱 **Responsive UI**
+* **Responsive UI**
 
   * Works across desktop and mobile screens
 
@@ -59,7 +59,7 @@ The application is **deployed on Vercel** for fast and reliable hosting.
 
 * React
 * JavaScript (ES6+)
-* CSS / Tailwind (if used)
+* CSS 
 
 **Libraries**
 
@@ -67,30 +67,7 @@ The application is **deployed on Vercel** for fast and reliable hosting.
 
 **Deployment**
 
-* Vercel
-
----
-
-## 📂 Project Structure
-
-```
-kanban-board/
-│
-├── public/
-│
-├── src/
-│   ├── components/
-│   │   ├── Board.jsx
-│   │   ├── Column.jsx
-│   │   └── TaskCard.jsx
-│   │
-│   ├── App.jsx
-│   ├── index.js
-│   └── styles.css
-│
-├── package.json
-└── README.md
-```
+* Render
 
 ---
 
@@ -99,13 +76,13 @@ kanban-board/
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/kanban-board.git
+git clone https://github.com/swdeveloperabhi/Kanban-Board.it
 ```
 
 Navigate to the project folder:
 
 ```bash
-cd kanban-board
+cd frontend
 ```
 
 Install dependencies:
@@ -122,10 +99,10 @@ npm run dev
 
 ---
 
-## 🚀 Deployment (Vercel)
+## 🚀 Deployment (Render)
 
 1. Push your project to **GitHub**
-2. Go to **Vercel**
+2. Go to **Render**
 3. Import your repository
 4. Click **Deploy**
 
