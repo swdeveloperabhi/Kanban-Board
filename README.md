@@ -74,7 +74,7 @@ The application is **deployed on Vercel** for fast and reliable hosting.
 Clone the repository:
 
 ```bash
-git clone https://github.com/swdeveloperabhi/Kanban-Board.it
+git clone https://github.com/swdeveloperabhi/Kanban-Board.git
 ```
 
 Navigate to the project folder:
