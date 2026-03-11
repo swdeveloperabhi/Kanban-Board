@@ -65,6 +65,10 @@ export default function CardModal({ card, onClose, onSave, onDelete }) {
               className={`color-btn purple ${taskColor === 'purple' ? 'selected' : ''}`}
               onClick={() => setTaskColor('purple')}
             ></button>
+            <button
+              className={`color-btn red ${taskColor === 'red' ? 'selected' : ''}`}
+              onClick={() => setTaskColor('red')}
+            ></button>
           </div>
           
           <div className="modal-buttons">

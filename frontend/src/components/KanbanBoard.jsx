@@ -4,33 +4,18 @@ import Card from './Card';
 import CardModal from './CardModal';
 
 const defaultTaskList = [
-  { id: '1', column: 'Backlog', color: 'purple', type: 'lines', offsetX: '-10px', offsetY: '0px' },
-  { id: '2', column: 'Backlog', color: 'green', type: 'lines', offsetX: '15px', offsetY: '-10px' },
-  { id: '3', column: 'Backlog', color: 'yellow', type: 'lines', offsetX: '-15px', offsetY: '-20px' },
-  { id: '4', column: 'Backlog', color: 'yellow', type: 'lines', offsetX: '20px', offsetY: '-15px' },
-
-  { id: '5', column: 'Next', color: 'yellow', type: 'lines', offsetX: '20px', offsetY: '-10px' },
-  { id: '6', column: 'Next', color: 'cyan', type: 'lines', offsetX: '-10px', offsetY: '-40px' },
-  { id: '7', column: 'Next', color: 'purple', type: 'lines', offsetX: '15px', offsetY: '-15px' },
-  { id: '8', column: 'Next', color: 'green', type: 'lines', offsetX: '-15px', offsetY: '-20px' },
-
-  { id: '9', column: 'In Progress', color: 'purple', type: 'lines', offsetX: '0px', offsetY: '10px' },
-
-  { id: '10', column: 'Testing', color: 'purple', type: 'lines', offsetX: '10px', offsetY: '20px' },
-  { id: '11', column: 'Testing', color: 'cyan', type: 'lines', offsetX: '-10px', offsetY: '-30px' },
-  { id: '12', column: 'Testing', color: 'yellow', type: 'lines', offsetX: '20px', offsetY: '40px' },
-
-  { id: '13', column: 'Done', color: 'yellow', type: 'check', offsetX: '-15px', offsetY: '-10px' },
-  { id: '14', column: 'Done', color: 'purple', type: 'check', offsetX: '15px', offsetY: '-20px' },
-  { id: '15', column: 'Done', color: 'yellow', type: 'check', offsetX: '-10px', offsetY: '-10px' },
-  { id: '16', column: 'Done', color: 'cyan', type: 'check', offsetX: '20px', offsetY: '-30px' },
+  { id: '1', column: 'Backlog', color: 'purple', type: 'text', title: 'Do DSA', description: 'Practice data structures and algorithms', offsetX: '-10px', offsetY: '0px' },
+  { id: '2', column: 'Next', color: 'yellow', type: 'text', title: 'Do Assignment', description: 'Complete the pending university assignment', offsetX: '15px', offsetY: '-10px' },
+  { id: '3', column: 'In Progress', color: 'cyan', type: 'text', title: 'Deploy the site', description: 'Deploy the application to Vercel or Netlify', offsetX: '-15px', offsetY: '-20px' },
+  { id: '4', column: 'Testing', color: 'red', type: 'text', title: 'Review PRs', description: 'Review community pull requests', offsetX: '10px', offsetY: '5px' },
+  { id: '5', column: 'Done', color: 'green', type: 'text', title: 'Update Docs', description: 'Ensure the README is up to date', offsetX: '-5px', offsetY: '15px' },
 ];
 
 const BOARD_COLUMNS = ['Backlog', 'Next', 'In Progress', 'Testing', 'Done'];
 
 export default function KanbanBoard() {
   const [tasks, setTasks] = useState(() => {
-    const localData = localStorage.getItem('kanban-cards');
+    const localData = localStorage.getItem('kanban-tasks-v3');
     if (localData) {
       try { return JSON.parse(localData); } catch (err) { return defaultTaskList; }
     }
@@ -45,7 +30,7 @@ export default function KanbanBoard() {
   const [activeTask, setActiveTask] = useState(null);
 
   useEffect(() => {
-    localStorage.setItem('kanban-cards', JSON.stringify(tasks));
+    localStorage.setItem('kanban-tasks-v3', JSON.stringify(tasks));
   }, [tasks]);
 
   useEffect(() => {
