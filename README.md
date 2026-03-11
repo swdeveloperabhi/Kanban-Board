@@ -16,8 +16,6 @@ The application is **deployed on Vercel** for fast and reliable hosting.
 ## 📸 Screenshot
 
 <img width="1894" height="905" alt="image" src="https://github.com/user-attachments/assets/f796789f-30e4-4fae-b452-a1407c0b1a76" />
-<img width="1894" height="905" alt="image" src="https://github.com/user-attachments/assets/f796789f-30e4-4fae-b452-a1407c0b1a76" />
-
 
 ---
 
